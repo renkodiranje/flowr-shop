@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form>
+        
+        <h2>Odaberite cveće:</h2>
+
+        <div>
+            <input type="number" min ="1" step="1" id="ruze" placeholder="Cena po cvetu je 150 din."> Ruže
+        </div>
+        <div>
+            <input type="number" min ="1" step="1" id="ljiljani" placeholder="Cena po cvetu je 120 din.">Ljiljani
+        </div>
+        <div>
+            <input type="number" min ="1" step="1" id="gerberi" placeholder="Cena po cvetu je 70 din.">Gerberi
+        </div>
+        <h2>Dodatni pokloni:</h2>
+        <div>
+            <input type="checkbox" name="poklon" id="bombonjera"> Bombonjera
+        </div>
+        <div>
+            <input type="checkbox" name="poklon" id="cokolada"> Čokolada
+        </div>
+        <div>
+            <input type="checkbox" name="poklon" id="sampanjac"> Šampanjac
+        </div>
+        <h2>Plaćanje:</h2>
+
+        <div>
+            <input type="radio" name="placanje" id="kes" checked value="kes"> Keš
+        </div>
+        <div>
+            <input type="radio" name="placanje" id="kartica" value="kartica"> Kartica
+        </div>
+
+        <input type="submit" value="Izracunaj" id="izracunaj">
+        <input type="reset" value="resetuj" id="resetuj">
+        
+        <h2>Vaša porudžbina:</h2>
+        
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

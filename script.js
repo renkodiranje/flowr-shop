@@ -1,9 +1,8 @@
 
 
 let izracunaj = document.getElementById("izracunaj");
-izracunaj.addEventListener("click",()=>{
+izracunaj.addEventListener("click",() => {
     izracunaj.disabled = true;
-    
     
     let ruza = document.getElementById("ruze");
     if(ruza.value < 0) {
@@ -13,7 +12,7 @@ izracunaj.addEventListener("click",()=>{
     let ruza_cena = Math.floor(ruza.value) * 150;
 
     let ljiljan = document.getElementById("ljiljani");
-    if(ljiljan.value  <0) {
+    if(ljiljan.value < 0) {
         alert("Broj ljiljana mora biti jednak ili veci od 1!");
         ljiljan.value = 0;
     }
@@ -24,24 +23,26 @@ izracunaj.addEventListener("click",()=>{
         alert("Broj gerbera mora biti jednak ili veci od 1!");
         gerber.value = 0;
     }
-    let gerber_cena =Math.floor(gerber.value) * 70;
+    let gerber_cena = Math.floor(gerber.value) * 70;
 
     let bombonjera = document.getElementById("bombonjera");
     let bombonjera_cena = 0;
     if(bombonjera.checked) {
         bombonjera_cena = 500;
     }
+
     let cokolada = document.getElementById("cokolada");
     let cokolada_cena = 0;
     if(cokolada.checked) {
         cokolada_cena = 500;
     }
+
     let sapmanjac = document.getElementById("sampanjac");
     let sampanjac_cena = 0;
     if(sapmanjac.checked) {
         sampanjac_cena = 500;
     }
-    //ubaciti math floor
+
     let red1 = document.createElement("p");
     red1.classList.add("pozadina");
     if(ruza.value >= 1) {
@@ -79,18 +80,21 @@ izracunaj.addEventListener("click",()=>{
         }
 
     }
+
     let red4 = document.createElement("p");
     red4.classList.add("pozadina");
     if(bombonjera.checked) {
         red4.innerHTML = `+Bombonjera`;
         document.body.append(red4);
     }
+
     let red5 = document.createElement("p");
     red5.classList.add("pozadina");
     if(cokolada.checked) {
         red5.innerHTML = `+ Čokolada`;
         document.body.append(red5);
     }
+
     let red6 = document.createElement("p");
     red6.classList.add("pozadina");
     if(sapmanjac.checked) {
@@ -99,7 +103,6 @@ izracunaj.addEventListener("click",()=>{
     }
     
     let racun = ruza_cena + ljiljan_cena + gerber_cena + bombonjera_cena + cokolada_cena + sampanjac_cena;
-    
     
     let kartica = document.getElementById("kartica");
     

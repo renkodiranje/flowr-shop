@@ -85,4 +85,9 @@ input[type="submit"]:hover {
     width: 55%;
     font-size: 12px;
   }
+  p {
+    padding: 5px;
+    margin: 5px auto;
+    width: 90%;
+  }
 }

@@ -60,11 +60,24 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 700px) {
   form,
   .pozadina {
-    width: 80%;
+    width: 90%;
     left: 2%;
+    padding: 10px;
   }
   .pozdrav {
     padding: 40px;
     font-size: medium;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+  h2 {
+    padding: 0px;
+    font-size: 20px;
+  }
+  input {
+    padding: 5px;
+    margin: 10px;
   }
 }

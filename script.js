@@ -119,7 +119,12 @@ izracunaj.addEventListener("click", () => {
     ispis1.innerHTML = `Ukupna cena je: ${racun}`;
     document.body.append(ispis1);
   }
-  ispis1.scrollIntoView();
+  red1.scrollIntoView();
+  red2.scrollIntoView();
+  red3.scrollIntoView();
+  red4.scrollIntoView();
+  red5.scrollIntoView();
+  red6.scrollIntoView();
 });
 
 let reset = document.getElementById("resetuj");

@@ -36,12 +36,16 @@ input {
 input[type="number"]:focus {
   border: 3px solid purple;
 }
-
+input[type="number"] {
+  border-radius: 5px;
+}
 input[type="reset"],
 input[type="submit"] {
   background-color: blueviolet;
+  color: white;
   border: none;
   border-radius: 5px;
+  padding: 10px;
 }
 
 input[type="reset"]:hover,
